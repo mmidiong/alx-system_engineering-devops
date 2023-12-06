@@ -1,2 +1,2 @@
 #!/bin/bash
--mime /tmp/iamafile
+file -i /tmp/iamafile
