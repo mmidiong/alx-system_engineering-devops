@@ -40,7 +40,7 @@ frontend premiumclicks-frontend
         http-request set-header X_Forwarded-Proto http
         default_backend premiumclicks-backend
 
-frontend clickviral-frontend-https
+frontend premiumclicks-frontend-https
         bind *:443 ssl crt /etc/haproxy/certs/clickviral.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend premiumclicks-backend
