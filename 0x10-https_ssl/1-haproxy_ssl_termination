@@ -33,11 +33,11 @@ defaults
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
 
-# start of parameters for aysuarex.tech
-frontend aysuarex.tech-http-frontend
+# start of parameters for premiumclicks.tech
+frontend premiumclicks.tech-http-frontend
 	bind	 *:80
 	http-request set-header X-Forwarded-Proto http
-	default_backend	 aysuarex.tech-backend
+	default_backend	 premiumclicks.tech-backend
 
 
 frontend  premiumclick.tech-https-frontend
