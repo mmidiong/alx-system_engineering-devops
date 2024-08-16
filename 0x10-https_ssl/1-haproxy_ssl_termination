@@ -40,14 +40,14 @@ frontend aysuarex.tech-http-frontend
 	default_backend	 aysuarex.tech-backend
 
 
-frontend  aysuarex.tech-https-frontend
-	bind *:443 ssl crt /etc/ssl/aysuarex.tech.pem
+frontend  premiumclick.tech-https-frontend
+	bind *:443 ssl crt /etc/ssl/premiumclicks.tech.pem
 	http-request set-header X-Forwarded-Proto https
-        default_backend aysuarex.tech-backend
+        default_backend premiumclicks.tech-backend
 
 
-backend aysuarex.tech-backend
+backend premiumclicks.tech-backend
         balance roundrobin
-        server 914-web-01 44.210.150.159:80 check
-        server 914-web-02 35.173.47.15:80 check
+        server 523579-web-01 100.25.211.214:80 check
+        server 523579-web-02 3.83.245.41:80 check
 # end of parameters
